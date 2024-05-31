@@ -1,0 +1,24 @@
+from .untyped_node import UntypedNode
+
+class UntypedStr(UntypedNode):
+    """
+    Represents an untyped node with str value.
+    """
+    
+    def __init__(self, value: str) -> None:
+        """
+        Creates a new instance of UntypedStr.
+
+        Args:
+            value (bool): The str value associated with the node.
+        """
+        self.__value = value
+
+    def get_value(self) -> str:
+        """
+        Gets the value associated with untyped str node.
+
+        Returns:
+            The value associated with untyped str node.
+        """
+        return self.__value
